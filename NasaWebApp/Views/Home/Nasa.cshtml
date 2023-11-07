@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "NASA Picture of the Day";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewBag.Title</h1>
+    <img src="@ViewBag.ImageUrl" alt="NASA APOD" class="img-fluid">
+    <form method="get" action="/Nasa/GetPictureByDay">
+        <button type="submit" class="btn btn-primary">Obter Nova Imagem</button>
+    </form>
+</div>
